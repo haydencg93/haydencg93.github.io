@@ -1,0 +1,2 @@
+1. Link to the Running Game: https://studio.code.org/projects/gamelab/beo9Em9vGiJZOMDs1g2JsAMxGVJUbjFAVHTpGzRMOmI (Game link in the Google Drive link is not the same. This one is the actual game.)
+2. Note that the Google Drive link was just for the actual competition and was a record of the game.

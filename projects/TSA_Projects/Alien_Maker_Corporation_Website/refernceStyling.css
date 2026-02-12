@@ -1,0 +1,172 @@
+body {
+  background-color: rgb(0, 0, 80);
+}
+
+h1 {
+  color: white;
+  font-family: Times New Roman, serif;
+  font-size: 30px;
+  text-align: center;
+}
+
+marquee {
+  color: white;
+  font-size: 50px;
+  font-family: Times New Roman, serif;
+  text-decoration: underline;
+  border-style: groove;
+}
+
+h2 {
+  color: white;
+  font-family: Times New Roman, serif;
+  font-size: 25px;
+  text-decoration: underline;
+}
+
+button {
+  background-color: white;
+  color: rgb(0, 75, 235);
+  border-color: black;
+}
+
+li {
+  color: white;
+}
+
+p {
+  color: gray;
+  font-family: Times New Roman, serif;
+  font-size: 15px;
+  text-align: center;
+}
+
+h3 {
+  color: white;
+  font-family: Times New Roman, serif;
+  font-size: 18px;
+}
+
+h6 {
+  color: white;
+  font-family: Times New Roman, serif;
+  font-size: 30px;
+  text-decoration: underline;
+  text-align: center;
+}
+
+h5 {
+  color: white;
+  font-family: Times New Roman, serif;
+  font-size: 25px;
+  text-decoration: underline;
+  text-align: center;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  width: 20%;
+}
+
+.animate {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.rocket {
+  background-image: url("rocket.png");
+  width: 100px;
+  height: 150px;
+  position: absolute;
+  left: -100px;
+  top: 50%;
+  animation: fly-right 3s linear infinite;
+}
+
+nav {
+  background-color: #004D90;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  display: block;
+  color: #ffffff;
+  padding: 1rem;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #699CC3;
+}
+
+          .stars {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+      }
+      .star {
+        position: absolute;
+        width: 3px;
+        height: 3px;
+        background-color: #ffffff;
+        box-shadow: 0 0 2px #ffffff;
+        animation: twinkling 3s infinite;
+      }
+      .star1 {
+        position: absolute;
+        width: 3px;
+        height: 3px;
+        background-color: #ffffff;
+        box-shadow: 0 0 2px #ffffff;
+        animation: twinkling 4s infinite;
+      }
+      .star2 {
+        position: absolute;
+        width: 3px;
+        height: 3px;
+        background-color: #ffffff;
+        box-shadow: 0 0 2px #ffffff;
+        animation: twinkling 2s infinite;
+      }
+      @keyframes twinkling {
+        0% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+      @keyframes move-star {
+        0% {
+          transform: translate(0, 0);
+        }
+        100% {
+          transform: translate(calc(100vw * var(--x)), calc(100vh * var(--y)));
+        }
+      }

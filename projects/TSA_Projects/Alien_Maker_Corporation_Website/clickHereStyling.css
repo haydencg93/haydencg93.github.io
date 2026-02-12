@@ -1,0 +1,28 @@
+marquee {
+  color: white;
+  font-size: 50px;
+  font-family: Times New Roman, serif;
+  text-decoration: underline;
+  border-style: groove;
+}
+
+body {
+  background-color: rgb(0, 0, 80);
+}
+
+button {
+  background-color: white;
+  color: rgb(0, 75, 235);
+  border-color: black;
+  text-align: right;
+  width: 50px;
+  height: 30px;
+  border-top-left-radius:3px;
+  border-top-right-radius:3px;
+  border-bottom-left-radius:3px;
+  border-bottom-right-radius:3px;
+}
+h4 {
+  text-align: center;
+  transform: translateY(-13px);
+}

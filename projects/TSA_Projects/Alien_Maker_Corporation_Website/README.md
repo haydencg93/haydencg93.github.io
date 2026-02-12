@@ -1,0 +1,3 @@
+- Event Description: Participants (three teams [3] of three to six [3-6] individuals per chapter; one entry per team) design, build, and launch a website that features the team's ability to incorporate the elements of website design, graphic layout, and proper coding techniques.
+- 2023 Topic: Space Tourism: a company that will make you an astronaut
+- Create a fictitious company and design an appropriate website. The website should provide information starting with promotion, basic information, cost, planning, training, vehicles, safety, launch, and recovery.

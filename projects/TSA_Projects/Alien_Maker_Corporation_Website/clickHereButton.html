@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="clickHereStyling.css" />
+    <title>Rocket Ship</title>
+    <link rel="shortcut icon" href="webmasterFavicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <style>
+      #rocket {
+        position: fixed;
+        bottom: -100px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 60px;
+        height: 120px;
+        background-color: #b3e0ff;
+        border-radius: 50px 50px 20px 20px;
+        animation: fly-up 3s ease-in-out forwards;
+        animation-iteration-count: infinite;
+      }
+      #rocket:after {
+        content: "";
+        position: absolute;
+        bottom: -30px;
+        left: 15px;
+        width: 30px;
+        height: 30px;
+        background-color: #0066cc;
+        border-radius: 40% 40% 15% 15%;
+        box-shadow: 0 0 30px 10px #ff9900;
+        animation: flame 0.5s ease-in-out infinite alternate;
+      }
+
+      #rocket:before {
+        content: "";
+        position: absolute;
+        top: -20px;
+        left: 0;
+        width: 45px;
+        height: 45px;
+        background-color: #80c1ff;
+        border-radius: 50% 50% 15% 15%;
+        transform: translateX(7px);
+      }
+      @keyframes fly-up {
+        0% {
+          bottom: -100px;
+          opacity: 0;
+        }
+        100% {
+          bottom: 100%;
+          opacity: 1;
+        }
+      }
+
+      @keyframes flame {
+        0% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0.5;
+        }
+      }
+
+      /* Add star styles */
+      .stars {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+      }
+      .star {
+        position: absolute;
+        width: 3px;
+        height: 3px;
+        background-color: #fff;
+        box-shadow: 0 0 2px #fff;
+        animation: twinkling 3s infinite;
+      }
+      .star1 {
+        position: absolute;
+        width: 3px;
+        height: 3px;
+        background-color: #fff;
+        box-shadow: 0 0 2px #fff;
+        animation: twinkling 4s infinite;
+      }
+      .star2 {
+        position: absolute;
+        width: 3px;
+        height: 3px;
+        background-color: #fff;
+        box-shadow: 0 0 2px #fff;
+        animation: twinkling 2s infinite;
+      }
+      .button {
+        transform: translateX(0px);
+      }
+      .moon {
+        position: fixed;
+        top: 50px;
+        right: 100px;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: #f5deb3;
+        box-shadow: 0 0 30px 5px #f5deb3;
+      }
+      /* Add animation for twinkling effect */
+      @keyframes twinkling {
+        0% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+      @keyframes move-star {
+        0% {
+          transform: translate(0, 0);
+        }
+        100% {
+          transform: translate(calc(100vw * var(--x)), calc(100vh * var(--y)));
+        }
+      }
+      .planet {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #00ffcc;
+        box-shadow: 0 0 30px #00ffcc;
+        animation: planet-rotate 10s linear infinite;
+      }
+      .orbit {
+        position: absolute;
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        border: 1px dashed #fff;
+        animation: orbit-rotate 20s linear infinite;
+      }
+      @keyframes planet-rotate {
+        0% {
+          transform: rotate(0);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      @keyframes orbit-rotate {
+        0% {
+          transform: rotate(0);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    
+    
+
+/* Sun */
+.sun {
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+  background-color: yellow;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Planets */
+
+
+.planetn {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: #ddd;
+  position: absolute;
+}
+
+/* Mercury */
+.mercury {
+  width: 150px;
+  height: 150px;
+  top: 70%;
+  left: 80%;
+  transform: translateX(-90px) rotate(0deg) translateY(-90px);
+  animation-duration: 2s;
+}
+
+.mercury .planet {
+  top: 50%;
+  transform: translateY(-10px);
+}
+
+/* Venus */
+.venus {
+  width: 200px;
+  height: 200px;
+  top: 10%;
+  left: 5%;
+  transform: translateX(-120px) rotate(0deg) translateY(-120px);
+  animation-duration: 4s
+  
+/* Mars */
+.mars {
+  width: 200px;
+  height: 200px;
+  top: 10%;
+  left: 5%;
+  transform: translateX(-120px) rotate(0deg) translateY(-120px);
+  }
+
+    
+    </style>
+    <div class="stars">
+      <!-- Add stars using pseudo elements -->
+      <div class="star2" style="top: 10%; left: 20%"></div>
+      <div class="star1" style="top: 20%; left: 50%"></div>
+      <div class="star" style="top: 30%; left: 80%"></div>
+      <div class="star1" style="top: 40%; left: 10%"></div>
+      <div class="star" style="top: 50%; left: 40%"></div>
+      <div class="star1" style="top: 60%; left: 70%"></div>
+      <div class="star2" style="top: 70%; left: 30%"></div>
+      <div class="star" style="top: 80%; left: 60%"></div>
+      <div class="star2" style="top: 90%; left: 20%"></div>
+      <div class="star1" style="top: 10%; left: 60%"></div>
+      <div class="star" style="top: 50%; left: 80%"></div>
+      <div class="star2" style="top: 90%; left: 50%"></div>
+      <div class="star" style="top: 80%; left: 90%"></div>
+      <div class="star1" style="top: 88%; left: 75%"></div>
+      <div class="star2" style="top: 62%; left: 15%"></div>
+    </div>
+    
+    <div id="rocket"></div>
+    <div class="orbit" style="top: 65%; left: 15%"></div>
+    <div class="planet" style="top: 69%; left: 16%"></div>
+    
+    
+  <div class="mercury orbit">
+    <div class="planetn"></div>
+  </div>
+  <div class="venus orbit">
+    <div class="planetn"></div>
+  </div>
+  <div class="earth orbit" style="top: 15%; left: 80%">
+    <div class="moon" ></div>
+    <div class="planetn"></div>
+  </div>
+  <div class="mars orbit" style="top: 15%; left: 80%">
+    <div class="moon"></div>
+    <div class="planetn"></div>
+  </div>
+
+
+    
+    <div>
+      <a href="homeLoading.html"
+        ><button><h4>Back</h4></button></a
+      >
+    </div>
+  </body>
+</html>
