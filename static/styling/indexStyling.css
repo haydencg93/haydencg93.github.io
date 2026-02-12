@@ -1,0 +1,117 @@
+/* Color Palette Mapping */
+:root {
+    --dark-mode: #242423;
+    --grey: #333533;
+    --ash-grey: #B9BAA3;
+    --white: #FFFFFF;
+    --vanilla-white: #E8EDDF;
+    --light-yellow: #EFDC9E;
+    --yellow: #F5CB5C;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.6;
+    color: var(--vanilla-white);
+    background-color: var(--dark-mode);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #141a17; /* Slightly lighter than dark-mode to create depth */
+    border-radius: 12px;
+    border: 1px solid var(--grey); /* Subtle border using grey */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+header h1 {
+    color: var(--light-yellow);
+    border-bottom: 2px solid var(--grey);
+    padding-bottom: 15px;
+    font-size: 2.2rem;
+    text-align: center;
+}
+
+h2 {
+    color: var(--ash-grey);
+    margin-top: 35px;
+    border-left: 4px solid var(--light-yellow);
+    padding-left: 15px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li {
+    margin-bottom: 12px;
+    padding-left: 15px;
+    border-left: 1px solid var(--grey);
+}
+
+a {
+    color: var(--light-yellow);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--yellow);
+    text-decoration: underline;
+}
+
+strong {
+    color: var(--white);
+}
+
+.footer {
+    text-align: center;
+    padding: 40px 20px;
+    color: var(--grey);
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+}
+
+.header-profile {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 40px;
+    border-bottom: 2px solid var(--grey);
+    padding-bottom: 20px;
+}
+
+.profile-text h1 {
+    margin: 0;
+    color: var(--light-yellow);
+    font-size: 2.5rem;
+}
+
+.profile-text .subtitle {
+    margin: 5px 0 0 0;
+    color: var(--ash-grey);
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.profile-image {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--yellow);
+    flex-shrink: 0;
+}
+
+@media (max-width: 600px) {
+    .header-profile {
+        flex-direction: column;
+        text-align: center;
+    }
+}
