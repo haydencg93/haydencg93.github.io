@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Hayden G. | Portfolio</title>
-        <link rel="stylesheet" href="static/styles/styling.css">
+        <link rel="stylesheet" href="static/styles/stylingIndex.css">
     </head>
     <body>
         <div class="container">
@@ -45,15 +45,32 @@
                 <ul>
                     <li><a href="https://github.com/haydencg93/haydencg93.github.io/tree/main/projects">My Projects</a></li>
                 </ul>
-    
+            </section>
+
+            <script src="static/scripts/scripting.js"></script>
+
             <section id="contact">
                 <h2>Contact Me</h2>
-                <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/haydencg93/" target="_blank">My LinkedIn</a></p>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="user-msg">Send a Message:</label>
+                        <textarea id="user-msg" name="message" required placeholder="Enter your message here..."></textarea>
+                    </div>
+                    <button type="submit">Send Message</button>
+                </form>
+                <div id="form-status" style="margin-top: 10px; color: var(--uiowa-gold);"></div>
+            </section>
+
+            <section id="protected-area">
+                <h2>Protected Content</h2>
+                <p>Access project management tools and team messages.</p>
+                <button id="unlock-btn">Access Protected Content</button>
             </section>
         </div>
         
         <div class="footer">
         <p>&copy; 2026 Hayden G. | Powered by GitHub Pages</p>
         </div>
+        <script src="static/scripts/scripting.js"></script>
     </body>
 </html>

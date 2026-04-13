@@ -1,0 +1,106 @@
+/* To get started with Requirement 1, we need to align your portfolio with the University of Iowa's "Black & Gold" visual standards. The lab specifically mentions using the official brand fonts and colors as a baseline.Below is the revamped CSS for static/styling/indexStyling.css. I have updated the color palette to use the official UIowa Hex codes and adjusted the design to be more "Gold" forward while maintaining the "Black" background depth.Updated static/styling/indexStyling.cssCSS/* ECE:4880 Lab 3 - UIowa Black & Gold Standard
+   Official UIowa Gold: #FFCD00
+   Official UIowa Black: #000000
+*/
+
+:root {
+    --uiowa-black: #000000;
+    --uiowa-gold: #FFCD00;
+    --dark-grey: #1a1a1a;
+    --white: #FFFFFF;
+    --soft-gold: #FFD700;
+}
+
+body {
+    /* Brand-compliant font stack: Roboto/Inter/Sans-Serif */
+    font-family: 'Roboto', 'Inter', -apple-system, sans-serif;
+    line-height: 1.6;
+    color: var(--white);
+    background-color: var(--uiowa-black);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background: var(--dark-grey); 
+    border-radius: 8px;
+    border: 1px solid var(--uiowa-gold); /* Gold border for structure */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+}
+
+header h1 {
+    color: var(--uiowa-gold);
+    border-bottom: 3px solid var(--uiowa-gold);
+    padding-bottom: 15px;
+    font-size: 2.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+h2 {
+    color: var(--uiowa-gold);
+    margin-top: 35px;
+    border-left: 5px solid var(--uiowa-gold);
+    padding-left: 15px;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+/* Form and Interactive Element Styling */
+a {
+    color: var(--uiowa-gold);
+    text-decoration: none;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: var(--white);
+    text-decoration: underline;
+}
+
+.profile-image {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--uiowa-gold); /* Gold ring around portrait */
+    flex-shrink: 0;
+}
+
+.footer {
+    text-align: center;
+    padding: 40px 20px;
+    color: var(--uiowa-gold);
+    font-size: 0.85rem;
+    opacity: 0.8;
+}
+
+/* Specific styling for the upcoming Password Dialog and Contact Form */
+input[type="text"], input[type="password"], textarea {
+    background-color: #333;
+    border: 1px solid var(--uiowa-gold);
+    color: white;
+    padding: 10px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+button {
+    background-color: var(--uiowa-gold);
+    color: var(--uiowa-black);
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background-color: var(--white);
+}
